@@ -2,6 +2,7 @@
 
 - [简介](README.md)
 - [安装](basics/installation.md)
+- [入门](quickstart.md)
 - [数据类型](datatype/README.md)
   - [list](datatype/list.md)
   - [set](datatype/set.md)
@@ -87,3 +88,7 @@
 - [Wheel](toolbox/pypa/wheel.md)
 - [Python 构建打包](toolbox/python-building.md)
 - [setuptools 工具](toolbox/setuptools.md)
+
+## 其他
+
+- [教程](tutorials.md)
