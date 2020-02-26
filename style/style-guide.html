@@ -1,0 +1,1366 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Python 规范 · 《Python 知识库》</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Jins Yin">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-page-footer-ex/style/plugin.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../toolbox/" />
+    
+    
+    <link rel="prev" href="pythonic/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://weplay.me" target="_blank" class="custom-link">微架构师</a>
+        </li>
+    
+        
+        <li>
+            <a href="https://quickstarts.io" target="_blank" class="custom-link">快速入门</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../basics/installation.html">
+            
+                <a href="../basics/installation.html">
+            
+                    
+                    安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../datatype/">
+            
+                <a href="../datatype/">
+            
+                    
+                    数据类型
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../datatype/list.html">
+            
+                <a href="../datatype/list.html">
+            
+                    
+                    list
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../datatype/set.html">
+            
+                <a href="../datatype/set.html">
+            
+                    
+                    set
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../oprators/">
+            
+                <a href="../oprators/">
+            
+                    
+                    运算符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../basics/closures.html">
+            
+                <a href="../basics/closures.html">
+            
+                    
+                    闭包
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../basics/comment.html">
+            
+                <a href="../basics/comment.html">
+            
+                    
+                    注释
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../basics/function.html">
+            
+                <a href="../basics/function.html">
+            
+                    
+                    函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../basics/conditions.html">
+            
+                <a href="../basics/conditions.html">
+            
+                    
+                    条件表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../basics/error.html">
+            
+                <a href="../basics/error.html">
+            
+                    
+                    错误（Error）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../basics/exception.html">
+            
+                <a href="../basics/exception.html">
+            
+                    
+                    异常（Exception）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../basics/module.html">
+            
+                <a href="../basics/module.html">
+            
+                    
+                    模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../basics/package.html">
+            
+                <a href="../basics/package.html">
+            
+                    
+                    包和模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../basics/serialization.html">
+            
+                <a href="../basics/serialization.html">
+            
+                    
+                    序列化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../basics/syntactic-sugar.html">
+            
+                <a href="../basics/syntactic-sugar.html">
+            
+                    
+                    语法糖
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../basics/generator.html">
+            
+                <a href="../basics/generator.html">
+            
+                    
+                    生成器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../basics/introspection.html">
+            
+                <a href="../basics/introspection.html">
+            
+                    
+                    自省
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../io/">
+            
+                <a href="../io/">
+            
+                    
+                    I/O
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">虚拟环境</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../env/conda/REAMDE.html">
+            
+                <a href="../env/conda/REAMDE.html">
+            
+                    
+                    Conda
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="../env/conda/anaconda.html">
+            
+                <a href="../env/conda/anaconda.html">
+            
+                    
+                    Anaconda
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="../env/conda/commands.html">
+            
+                <a href="../env/conda/commands.html">
+            
+                    
+                    Conda 常用命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="../env/conda/conda-vs-pip.html">
+            
+                <a href="../env/conda/conda-vs-pip.html">
+            
+                    
+                    Conda 与 PIP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4" data-path="../env/conda/miniconda.html">
+            
+                <a href="../env/conda/miniconda.html">
+            
+                    
+                    Miniconda
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5" data-path="../env/conda/virtualenv.html">
+            
+                <a href="../env/conda/virtualenv.html">
+            
+                    
+                    Conda 虚拟环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../env/virtenv/">
+            
+                <a href="../env/virtenv/">
+            
+                    
+                    virtenv
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1" data-path="../env/virtenv/pyenv.html">
+            
+                <a href="../env/virtenv/pyenv.html">
+            
+                    
+                    pyenv
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2" data-path="../env/virtenv/venv.html">
+            
+                <a href="../env/virtenv/venv.html">
+            
+                    
+                    venv
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">代码库</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../libs/cpython/">
+            
+                <a href="../libs/cpython/">
+            
+                    
+                    标准库
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" data-path="../libs/cpython/builtins/">
+            
+                <a href="../libs/cpython/builtins/">
+            
+                    
+                    builtins
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1.1" data-path="../libs/cpython/builtins/constants/">
+            
+                <a href="../libs/cpython/builtins/constants/">
+            
+                    
+                    constants
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.2" data-path="../libs/cpython/builtins/exceptions/">
+            
+                <a href="../libs/cpython/builtins/exceptions/">
+            
+                    
+                    exceptions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.3" data-path="../libs/cpython/builtins/functions/">
+            
+                <a href="../libs/cpython/builtins/functions/">
+            
+                    
+                    functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.4" data-path="../libs/cpython/builtins/stdtypes/">
+            
+                <a href="../libs/cpython/builtins/stdtypes/">
+            
+                    
+                    stdtypes
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2" data-path="../libs/cpython/logging/">
+            
+                <a href="../libs/cpython/logging/">
+            
+                    
+                    logging
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3" data-path="../libs/cpython/email/">
+            
+                <a href="../libs/cpython/email/">
+            
+                    
+                    email
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4" data-path="../libs/cpython/json/">
+            
+                <a href="../libs/cpython/json/">
+            
+                    
+                    json
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.5" data-path="../libs/cpython/dis/">
+            
+                <a href="../libs/cpython/dis/">
+            
+                    
+                    dis
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.6" data-path="../libs/cpython/re/">
+            
+                <a href="../libs/cpython/re/">
+            
+                    
+                    re
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.7" data-path="../libs/cpython/os/">
+            
+                <a href="../libs/cpython/os/">
+            
+                    
+                    os
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.8" data-path="../libs/cpython/sys/">
+            
+                <a href="../libs/cpython/sys/">
+            
+                    
+                    sys
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.9" data-path="../libs/cpython/signal/">
+            
+                <a href="../libs/cpython/signal/">
+            
+                    
+                    signal
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.10" data-path="../libs/cpython/traceback/">
+            
+                <a href="../libs/cpython/traceback/">
+            
+                    
+                    traceback
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.11" data-path="../libs/cpython/itertools/">
+            
+                <a href="../libs/cpython/itertools/">
+            
+                    
+                    itertools
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.12" data-path="../libs/cpython/_thread/">
+            
+                <a href="../libs/cpython/_thread/">
+            
+                    
+                    _thread
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.13" data-path="../libs/cpython/threading/">
+            
+                <a href="../libs/cpython/threading/">
+            
+                    
+                    threading
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.13.1" data-path="../libs/cpython/threading/GIL/">
+            
+                <a href="../libs/cpython/threading/GIL/">
+            
+                    
+                    GIL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.14" data-path="../libs/cpython/multiprocessing/">
+            
+                <a href="../libs/cpython/multiprocessing/">
+            
+                    
+                    multiprocessing
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.14.1" data-path="../libs/cpython/multiprocessing/processsafe.html">
+            
+                <a href="../libs/cpython/multiprocessing/processsafe.html">
+            
+                    
+                    进程安全
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../libs/3rdparty/">
+            
+                <a href="../libs/3rdparty/">
+            
+                    
+                    第三方库
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.2.1" data-path="../libs/3rdparty/jupyter/">
+            
+                <a href="../libs/3rdparty/jupyter/">
+            
+                    
+                    jupyter
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.2.1.1" data-path="../libs/3rdparty/jupyter/ipython.html">
+            
+                <a href="../libs/3rdparty/jupyter/ipython.html">
+            
+                    
+                    IPython
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.2" data-path="../libs/3rdparty/matplotlib/">
+            
+                <a href="../libs/3rdparty/matplotlib/">
+            
+                    
+                    matplotlib
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.3" data-path="../libs/3rdparty/numpy/">
+            
+                <a href="../libs/3rdparty/numpy/">
+            
+                    
+                    numpy
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.2.3.1" data-path="../libs/3rdparty/numpy/quickstart.html">
+            
+                <a href="../libs/3rdparty/numpy/quickstart.html">
+            
+                    
+                    Numpy 快速入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.4" data-path="../libs/3rdparty/pandas/">
+            
+                <a href="../libs/3rdparty/pandas/">
+            
+                    
+                    pandas
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.5" data-path="../libs/3rdparty/scipy/">
+            
+                <a href="../libs/3rdparty/scipy/">
+            
+                    
+                    scipy
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.6" data-path="../libs/3rdparty/seaborn/">
+            
+                <a href="../libs/3rdparty/seaborn/">
+            
+                    
+                    seaborn
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.7" data-path="../libs/3rdparty/statsmodels/">
+            
+                <a href="../libs/3rdparty/statsmodels/">
+            
+                    
+                    statsmodels
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.8" data-path="../libs/3rdparty/requests/">
+            
+                <a href="../libs/3rdparty/requests/">
+            
+                    
+                    requests
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    style
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="pythonic/">
+            
+                <a href="pythonic/">
+            
+                    
+                    Pythonic
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="3.5" data-path="style-guide.html">
+            
+                <a href="style-guide.html">
+            
+                    
+                    Python 规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">工具</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../toolbox/">
+            
+                <a href="../toolbox/">
+            
+                    
+                    toolbox
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="../toolbox/environment/">
+            
+                <a href="../toolbox/environment/">
+            
+                    
+                    environment
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="../toolbox/packaging/egg.html">
+            
+                <a href="../toolbox/packaging/egg.html">
+            
+                    
+                    Egg
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="../toolbox/pyinstaller.html">
+            
+                <a href="../toolbox/pyinstaller.html">
+            
+                    
+                    PyInstaller
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="../toolbox/pypa/pip.html">
+            
+                <a href="../toolbox/pypa/pip.html">
+            
+                    
+                    Pip - 安装 Python 包的工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="../toolbox/pypa/pipenv.html">
+            
+                <a href="../toolbox/pypa/pipenv.html">
+            
+                    
+                    Pipenv
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7" data-path="../toolbox/pypa/pypi.html">
+            
+                <a href="../toolbox/pypa/pypi.html">
+            
+                    
+                    PyPI · 发布 Python 包
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.8" data-path="../toolbox/pypa/setuptools.html">
+            
+                <a href="../toolbox/pypa/setuptools.html">
+            
+                    
+                    setuptools
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.9" data-path="../toolbox/pypa/twine.html">
+            
+                <a href="../toolbox/pypa/twine.html">
+            
+                    
+                    twine
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.10" data-path="../toolbox/pypa/virtualenv.html">
+            
+                <a href="../toolbox/pypa/virtualenv.html">
+            
+                    
+                    Virtualenv
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.11" data-path="../toolbox/pypa/wheel.html">
+            
+                <a href="../toolbox/pypa/wheel.html">
+            
+                    
+                    Wheel
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.12" data-path="../toolbox/python-building.html">
+            
+                <a href="../toolbox/python-building.html">
+            
+                    
+                    Python 构建打包
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.13" data-path="../toolbox/setuptools.html">
+            
+                <a href="../toolbox/setuptools.html">
+            
+                    
+                    setuptools 工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Python 规范</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="python-&#x89C4;&#x8303;">Python &#x89C4;&#x8303;</h1>
+<h2 id="&#x547D;&#x540D;&#x89C4;&#x8303;">&#x547D;&#x540D;&#x89C4;&#x8303;</h2>
+<pre><code class="lang-txt">module_name, package_name, ClassName, method_name, ExceptionName, function_name, GLOBAL_CONSTANT_NAME, global_var_name, instance_var_name, function_parameter_name, local_var_name
+</code></pre>
+<h2 id="yapf-formatter">YAPF formatter</h2>
+<h3 id="&#x5B89;&#x88C5;">&#x5B89;&#x88C5;</h3>
+<pre><code class="lang-sh"><span class="hljs-comment"># &#x7528; Python3 &#x5B89;&#x88C5;&#x7684; yapf&#xFF0C;&#x4EC5;&#x9650;&#x683C;&#x5F0F;&#x5316; Python3 &#x7684;&#x4EE3;&#x7801;</span>
+$ pip install yapf
+</code></pre>
+<p>&#x547D;&#x4EE4;&#x884C;&#x53C2;&#x6570;&#xFF1A;</p>
+<ul>
+<li><code>-p</code>/<code>--parallel</code>: &#x683C;&#x5F0F;&#x5316;&#x591A;&#x4E2A;&#x6587;&#x4EF6;&#x65F6;&#x4F7F;&#x7528;&#x591A;&#x7EBF;&#x7A0B;</li>
+<li><code>-d</code>/<code>--diff</code>: &#x6253;&#x5370;&#x4E0D;&#x540C;&#x70B9;</li>
+<li><code>-i</code>/<code>--in-place</code>: &#x76F4;&#x63A5;&#x5BF9;&#x539F;&#x6587;&#x4EF6;&#x8FDB;&#x884C;&#x4FEE;&#x6539;</li>
+<li><code>-r</code>/<code>--recursive</code>: &#x5BF9;&#x76EE;&#x5F55;&#x4E0B;&#x7684;&#x6240;&#x6709;&#x6587;&#x4EF6;&#x8FDB;&#x884C;&#x9012;&#x5F52;&#x683C;&#x5F0F;&#x5316;</li>
+<li><code>--style</code>: &#x6307;&#x5B9A;&#x683C;&#x5F0F;&#x5316;&#x6837;&#x5F0F;</li>
+</ul>
+<h3 id="&#x683C;&#x5F0F;&#x5316;&#x6837;&#x5F0F;">&#x683C;&#x5F0F;&#x5316;&#x6837;&#x5F0F;</h3>
+<p>&#x641C;&#x7D22;&#x987A;&#x5E8F;&#xFF1A;</p>
+<ol>
+<li>&#x547D;&#x4EE4;&#x884C;&#xFF08;<code>--style=&apos;{based_on_style: chromium, indent_width: 4}&apos;</code>&#xFF09;</li>
+<li>&#x5F53;&#x524D;&#x76EE;&#x5F55;&#x6216;&#x7236;&#x76EE;&#x5F55;&#x4E4B;&#x4E00;&#x7684; <code>.style.yapf</code> &#x7684; <code>[style]</code> &#x90E8;&#x5206;</li>
+<li>&#x5F53;&#x524D;&#x76EE;&#x5F55;&#x6216;&#x7236;&#x76EE;&#x5F55;&#x4E4B;&#x4E00;&#x7684; <code>setup.cfg</code> &#x7684; <code>[yapf]</code> &#x90E8;&#x5206;&#xFF08;&#x5BFC;&#x51FA;&#x914D;&#x7F6E;&#xFF1A;<code>yapf --style-help &gt; style.cfg</code>&#xFF09;</li>
+<li>Home &#x76EE;&#x5F55;&#x7684; <code>~/.config/yapf/style</code> &#x6587;&#x4EF6;</li>
+</ol>
+<p>&#x5185;&#x7F6E;&#x6837;&#x5F0F;&#xFF1A;</p>
+<ul>
+<li>pep8</li>
+<li>google</li>
+<li>chromium</li>
+</ul>
+<h3 id="&#x793A;&#x4F8B;">&#x793A;&#x4F8B;</h3>
+<ul>
+<li>example.py</li>
+</ul>
+<pre><code class="lang-python">x = {  <span class="hljs-string">&apos;a&apos;</span>:<span class="hljs-number">37</span>,<span class="hljs-string">&apos;b&apos;</span>:<span class="hljs-number">42</span>,
+
+<span class="hljs-string">&apos;c&apos;</span>:<span class="hljs-number">927</span>}
+
+y = <span class="hljs-string">&apos;hello &apos;</span><span class="hljs-string">&apos;world&apos;</span>
+z = <span class="hljs-string">&apos;hello &apos;</span>+<span class="hljs-string">&apos;world&apos;</span>
+a = <span class="hljs-string">&apos;hello {}&apos;</span>.format(<span class="hljs-string">&apos;world&apos;</span>)
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">foo</span>  <span class="hljs-params">(     object  )</span>:</span>
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">f</span>    <span class="hljs-params">(self   )</span>:</span>
+    <span class="hljs-keyword">return</span>       <span class="hljs-number">37</span>*-+<span class="hljs-number">2</span>
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">g</span><span class="hljs-params">(self, x,y=<span class="hljs-number">42</span>)</span>:</span>
+      <span class="hljs-keyword">return</span> y
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">f</span>  <span class="hljs-params">(   a )</span> :</span>
+  <span class="hljs-keyword">return</span>      <span class="hljs-number">37</span>+-+a[<span class="hljs-number">42</span>-x :  y**<span class="hljs-number">3</span>]
+</code></pre>
+<ul>
+<li>.style.yapf</li>
+</ul>
+<pre><code class="lang-ini"><span class="hljs-section">[style]</span>
+<span class="hljs-attr">based_on_style</span> = google
+<span class="hljs-attr">spaces_before_comment</span> = <span class="hljs-number">4</span>
+<span class="hljs-attr">split_before_logical_operator</span> = <span class="hljs-literal">true</span>
+</code></pre>
+<ul>
+<li>&#x683C;&#x5F0F;&#x5316;</li>
+</ul>
+<pre><code class="lang-sh"><span class="hljs-comment"># &#x683C;&#x5F0F;&#x5316;&#x5E76;&#x6253;&#x5370;&#xFF0C;&#x4F46;&#x4E0D;&#x4FEE;&#x6539;&#x6587;&#x4EF6;</span>
+$ yapf example.py
+
+<span class="hljs-comment"># &#x6253;&#x5370;&#x683C;&#x5F0F;&#x5316;&#x524D;&#x540E;&#x533A;&#x522B;</span>
+$ yapf --diff example.py
+
+<span class="hljs-comment"># &#x683C;&#x5F0F;&#x5316;&#x5E76;&#x4FEE;&#x6539;&#x6587;&#x4EF6;</span>
+$ yapf -i example.py
+
+<span class="hljs-comment"># &#x4F7F;&#x7528;&#x591A;&#x7EBF;&#x7A0B;&#x5BF9;&#x5F53;&#x524D;&#x76EE;&#x5F55;&#x4E0B;&#x7684;&#x6240;&#x6709;&#x6587;&#x4EF6;&#x8FDB;&#x884C;&#x683C;&#x5F0F;&#x5316;&#x5E76;&#x4FEE;&#x6539;</span>
+$ yapf -p -i -r ./
+
+<span class="hljs-comment"># &#x901A;&#x8FC7;&#x547D;&#x4EE4;&#x884C;&#x6307;&#x5B9A;&#x683C;&#x5F0F;&#x5316;&#x6837;&#x5F0F;</span>
+$ yapf --style=<span class="hljs-string">&apos;{based_on_style: chromium, indent_width: 4}&apos;</span> -p -i -r ./
+</code></pre>
+<h2 id="&#x53C2;&#x8003;">&#x53C2;&#x8003;</h2>
+<ul>
+<li><a href="https://github.com/google/styleguide/blob/gh-pages/pyguide.md" target="_blank">Google Python Style Guide</a></li>
+<li><a href="https://github.com/google/yapf/" target="_blank">github.com/google/yapf</a></li>
+<li><a href="http://www.cnblogs.com/zhanglianbo/p/5664997.html" target="_blank">Python &#x547D;&#x540D;&#x89C4;&#x8303;</a></li>
+<li><a href="https://www.jianshu.com/p/22d7a97720b7" target="_blank">Python &#x683C;&#x5F0F;&#x5316;&#x5DE5;&#x5177; yapf &#x4F7F;&#x7528;&#x8BF4;&#x660E;</a></li>
+</ul>
+<footer class="page-footer-ex"> <span class="page-footer-ex-copyright"> Copyright &#xA9; 2019-2020 | CC BY-NC-SA 4.0 <br> &#x76F8;&#x5173;&#x7F51;&#x7AD9;: <a href="https://weplay.me" target="_blank">&#x77E5;&#x8BC6;&#x5E93;</a> <a href="https://weplay.me" target="_blank">&#x5FAE;&#x67B6;&#x6784;&#x5E08;</a> <a href="https://quickstarts.io" target="_blank">&#x5FEB;&#x901F;&#x5165;&#x95E8;</a> </span> &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; <span class="page-footer-ex-footer-update"> &#x66F4;&#x65B0;&#x4E8E; 2020-02-26 </span> </footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="pythonic/" class="navigation navigation-prev " aria-label="Previous page: Pythonic">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../toolbox/" class="navigation navigation-next " aria-label="Next page: toolbox">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Python 规范","level":"3.5","depth":1,"next":{"title":"toolbox","level":"4.1","depth":1,"path":"toolbox/README.md","ref":"toolbox/README.md","articles":[]},"previous":{"title":"Pythonic","level":"3.4","depth":1,"path":"style/pythonic/README.md","ref":"style/pythonic/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-fontsettings","-sharing","highlight","github","-lunr","-search","search-pro","-ga","-page-toc","-splitter","-lightbox","-github-buttons@2.1.0","-custom-favicon","-summary","sitemap-general","edit-link","page-footer-ex"],"styles":{"website":"website.css"},"pluginsConfig":{"github":{"url":"https://github.com/jinsyin/gitbook-template"},"page-footer-ex":{"copyright":"Copyright © 2019-2020 | CC BY-NC-SA 4.0 <br/> 相关网站: [知识库](https://weplay.me) [微架构师](https://weplay.me) [快速入门](https://quickstarts.io)","markdown":true,"update_format":"YYYY-MM-DD","update_label":"更新于"},"search-pro":{},"page-toc":{"selector":".markdown-section h2, .markdown-section h3, .markdown-section h4","position":"top","showByDefault":true},"sitemap-general":{"prefix":"https://weplay.me/gitbook-template/"},"highlight":{},"favicon":"favicon.ico","github-buttons":{"repo":"jinsyin/gitbook-template","types":["star"],"size":"small"},"ga":{"token":"UA-12345678-1"},"edit-link":{"label":"编辑","base":"https://github.com/jinsyin/gitbook-template/blob/master/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Jins Yin","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"《Python 知识库》","language":"zh-hans","links":{"sidebar":{"微架构师":"https://weplay.me","快速入门":"https://quickstarts.io"}},"gitbook":"*","description":"Python 知识库、教程"},"file":{"path":"style/style-guide.md","mtime":"2020-02-26T13:17:59.072Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-02-26T13:18:47.958Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+
+    </body>
+</html>
+
